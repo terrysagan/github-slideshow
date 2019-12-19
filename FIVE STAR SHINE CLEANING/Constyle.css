@@ -1,0 +1,484 @@
+﻿/*BANNER START*/
+
+.banner {
+    display: inline-flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+    height: 120px;
+    line-height: 20px;
+    opacity: .75;
+    overflow: hidden;
+    z-index: 5000;
+    background: white;
+    opacity: 1;
+}
+
+.banner {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+
+/*banner logo*/
+
+
+/*banner logo*/
+
+.logo {
+    width: 200px;
+    margin-left: 0;
+    padding-left: 0;
+    position: relative;
+}
+
+.logo ul li {
+    list-style: none;
+}
+
+.logo img {
+    display: grid;
+    display: flex;
+    width: 175px;
+    height: 75px;
+}
+
+
+/*banner area*/
+
+.area {
+    background-color: white;
+    width: 900px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.area p1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.6vw;
+    color: black;
+}
+
+.area p {
+    font-family: 'Droid Serif', serif;
+    font-size: 1.2vw;
+    text-align: center;
+    color: black;
+}
+
+.area h3 {
+    text-align: left;
+}
+
+.area ul li {
+    list-style: none;
+}
+
+
+/*banner contact*/
+
+.contacta {
+    width: 200px;
+    margin-top: 20px;
+}
+
+.contacta p {
+    font-family: 'Lobster', cursive;
+    color: black;
+}
+
+.contacta ul li {
+    list-style: none;
+}
+
+
+/*BANNER END*/
+
+
+/* NAV START */
+
+.main ul li {
+    list-style: none;
+}
+
+.nav {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 2px;
+}
+
+nav ul {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    background: black;
+}
+
+nav ul,
+nav li {
+    list-style: none;
+    flex: 1;
+}
+
+nav li:last-child {
+    border-bottom: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    font-size: 18px;
+}
+
+nav a:hover {
+    background: #adacac;
+    color: #fff;
+}
+
+nav li {
+    position: relative;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+nav input,
+nav label {
+    display: none;
+    width: 56px;
+    height: 56px;
+    background: #555;
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+    font-size: 1.6rem;
+    border-radius: 20px;
+}
+
+nav label {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    transition: .4s;
+}
+
+nav label:hover {
+    cursor: pointer;
+}
+
+nav label:before {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    content: "\f0c9";
+    text-align: center;
+}
+
+
+/************* MEDIA QUERIES **************/
+
+@media only screen and (max-width: 1440px),
+only screen and (mix-width: 300px) {
+    nav {
+        position: relative;
+    }
+    nav ul {
+        transform: translateY(0);
+        box-shadow: 0 0 5px orange;
+        transition: all .5s;
+        position: right;
+        width: 50%;
+    }
+    nav li {
+        flex: none;
+        width: 100%;
+        border-bottom: solid 2px blue;
+    }
+    nav input[type=checkbox]:checked+ul {
+        transform: translateY(-100%);
+        width: 50%;
+        background: #999;
+        transition: all .5s;
+    }
+    nav label {
+        display: block;
+    }
+    nav input[type="checkbox"]:checked+ul li:nth-child(1) {
+        background: #777;
+        color: #fff;
+    }
+}
+
+
+/*NAV END*/
+
+
+/*CONTACT FORM START*/
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    place-items: senter;
+    position: relative;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.container {
+    margin: auto;
+    padding: 0px;
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.wrapper2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+    width: 100%;
+    justify-items: center;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    margin-top: 80px;
+    background-color: darkseagreen;
+    text-align: center;
+    box-shadow: 0 0 7px 7px;
+    flex-wrap: wrap;
+    margin-top: 67px;
+    ;
+}
+
+.brand h2 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #c9e6ff;
+    height: 200px;
+    box-shadow: 0 0 7px 7px;
+}
+
+.company-info h3 {
+    display: felx;
+    margin-right: 10px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.company-info h3,
+.company-info ul {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.brand span {
+    color: #fff;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    height: 700px;
+}
+
+.wrapper2>div {
+    border: blue 5px solid;
+}
+
+.wrapper2>* {
+    padding: 1em;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    max-height: auto;
+    background: #f9feff;
+    box-shadow: 0 0 7px 7px;
+}
+
+
+/*FORM STYLE*/
+
+.contact form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+}
+
+.contact h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.contact form p {
+    padding-left: 2em;
+    padding-right: 2em;
+    margin: 0;
+}
+
+.contact form p {
+    color: darkslateblue;
+    font-size: 1.5rem;
+}
+
+.contact form .full {
+    display: inline-flex;
+    float: left;
+    width: 100%;
+    grid-column: 1/3;
+    height: 40px;
+}
+
+.contact form button,
+.contact form input,
+.conatact form textarea {
+    width: 100%;
+    padding: 1em;
+    margin-top: 0.5em;
+    border: 3px solid #c9e6ff;
+}
+
+.contact form button {
+    background: #c9e6ff;
+    border: 0;
+    text-transform: uppercase;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+    background: #92bde7;
+    color: #fff;
+    outline: 0;
+    transition: background-color 2s ease-out;
+}
+
+
+/*LARGE SCREEN*/
+
+@media () {}
+
+.wrapper2>* {
+    padding: 2em;
+}
+
+.company-info h3 .company-info ul,
+.brand h1 {
+    text-align: ;
+}
+
+
+/*treves end*/
+
+
+/*CONTENT association START*/
+
+
+/*MEMBERSHIP START*/
+
+
+/*MEMBERSHIP START*/
+
+.association {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    Max-Width: 1440px;
+    padding: 110px;
+}
+
+.association img {
+    display: grid;
+    width: 60%;
+}
+
+
+/*MEMBERSHIP END */
+
+
+/*FOOTER START*/
+
+.footercontainer {
+    display: inline-flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+    font-size: 16px;
+    height: 120px;
+    line-height: 20px;
+    opacity: .75;
+    overflow: hidden;
+    z-index: 5000;
+    opacity: 1;
+    background-color: red;
+    color: white;
+}
+
+.footercontainer {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 10px;
+    list-style: none;
+}

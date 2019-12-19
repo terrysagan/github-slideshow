@@ -1,0 +1,747 @@
+﻿//* CSS Document */
+
+/*kichen: https://pixabay.com/photos/kitchen-home-real-estate-2486092/*/
+
+
+/* homes skaches :https://pixabay.com/illustrations/houses-set-architecture-clip-art-1094900/*/
+
+.btn {
+    display: inline-flex;
+    background-color: #666;
+    color: white;
+    background-image: linear-gradient(bottom, darkgrey, to lightblue);
+    border-radius: 6px;
+    text-decoration: none;
+    border: 0.10em solid #666;
+    font-size: 1rem;
+    align-items: stretch;
+    padding: auto;
+}
+
+.btn1 {
+    display: inline-flex;
+    background-color: mintcream;
+    color: black;
+    background-image: linear-gradient(bottom, darkgrey, to lightblue);
+    border-radius: 6px;
+    text-decoration: none;
+    border: 0.10em solid #666;
+    font-size: 1rem;
+    align-items: stretch;
+    padding: auto;
+}
+
+
+/*BANNER START*/
+
+.banner {
+    display: inline-flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+    height: 120px;
+    line-height: 20px;
+    opacity: .75;
+    overflow: hidden;
+    z-index: 5000;
+    background: white;
+    opacity: 1;
+}
+
+.banner {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+
+/*banner logo*/
+
+
+/*banner logo*/
+
+.logo {
+    width: 200px;
+    margin-left: 0;
+    padding-left: 0;
+    position: relative;
+}
+
+.logo ul li {
+    list-style: none;
+}
+
+.logo img {
+    display: grid;
+    display: flex;
+    width: 175px;
+    height: 75px;
+}
+
+
+/*banner area*/
+
+.area {
+    background-color: white;
+    width: 900px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.area p1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.6vw;
+    color: black;
+}
+
+.area p {
+    font-family: 'Droid Serif', serif;
+    font-size: 1.2vw;
+    text-align: center;
+    color: black;
+}
+
+.area h3 {
+    text-align: left;
+}
+
+.area ul li {
+    list-style: none;
+}
+
+
+/*banner contact*/
+
+.contact {
+    width: 200px;
+    margin-top: 20px;
+}
+
+.contact p {
+    font-family: 'Lobster', cursive;
+    color: black;
+}
+
+.contact ul li {
+    list-style: none;
+}
+
+
+/*BANNER END*/
+
+
+/* NAV START */
+
+.main ul li {
+    list-style: none;
+}
+
+.nav {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 2px;
+}
+
+nav ul {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    background: black;
+}
+
+nav ul,
+nav li {
+    list-style: none;
+    flex: 1;
+}
+
+nav li:last-child {
+    border-bottom: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    font-size: 18px;
+}
+
+nav a:hover {
+    background: #adacac;
+    color: #fff;
+}
+
+nav li {
+    position: relative;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+nav input,
+nav label {
+    display: none;
+    width: 56px;
+    height: 56px;
+    background: #555;
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+    font-size: 1.6rem;
+    border-radius: 20px;
+}
+
+nav label {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    transition: .4s;
+}
+
+nav label:hover {
+    cursor: pointer;
+}
+
+nav label:before {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    content: "\f0c9";
+    text-align: center;
+}
+
+
+/************* MEDIA QUERIES **************/
+
+@media only screen and (max-width: 1440px),
+only screen and (mix-width: 300px) {
+    nav {
+        position: relative;
+    }
+    nav ul {
+        transform: translateY(0);
+        box-shadow: 0 0 5px orange;
+        transition: all .5s;
+        position: right;
+        width: 50%;
+    }
+    nav li {
+        flex: none;
+        width: 100%;
+        border-bottom: solid 2px blue;
+    }
+    nav input[type=checkbox]:checked+ul {
+        transform: translateY(-100%);
+        width: 50%;
+        background: #999;
+        transition: all .5s;
+    }
+    nav label {
+        display: block;
+    }
+    nav input[type="checkbox"]:checked+ul li:nth-child(1) {
+        background: #777;
+        color: #fff;
+    }
+}
+
+
+/*NAV END*/
+
+
+/*new nav start*/
+
+
+/*new nav end*/
+
+
+/* SHOWCASE START */
+
+#slidy-container {
+    width: 100%;
+    max-width: 1300px;
+    margin-top: 25px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .video {
+        padding: 15px;
+    }
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .video {
+        padding: 15px;
+    }
+}
+
+
+/*SHOWCASE END */
+
+
+/*CONTENT START*/
+
+
+/*CONTENT 3points start */
+
+.points {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: auto;
+    height: auto;
+    margin-top: 80px;
+    background: red;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.points ul h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "content1 content2 content3"
+}
+
+.content {
+    grid-area: content;
+    background-position: center;
+    max-width: 1400px;
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content1 {
+    margin-right: 10px;
+    background-color: ;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    fill-opacity: auto;
+    width: 400px;
+    height: auto;
+    text-align: justify;
+    padding-right: 35px;
+}
+
+.content1 p {
+    font-size: 18px;
+    text-indent: justify;
+}
+
+.content1a {
+    display: grid;
+    background-color:
+}
+
+.content2 {
+    margin-right: 10px;
+    background-color: ;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    fill-opacity: auto;
+    width: 400px;
+    height: auto;
+    text-align: justify;
+    padding-right: 40px;
+}
+
+.content2 p {
+    font-size: 18px;
+    text-indent: justify;
+}
+
+.content2a {
+    display: grid;
+    background-color:
+}
+
+.content3 {
+    margin-right: 10px;
+    background-color: ;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    fill-opacity: auto;
+    width: 400px;
+    height: auto;
+    text-align: justify;
+}
+
+.content3 p {
+    font-size: 18px;
+    text-indent: justify;
+}
+
+.content3a {
+    display: grid;
+    background-color:
+}
+
+
+/* CONTENT 3points end*/
+
+
+/*CONTENT END*/
+
+
+/* OVERLAY START*/
+
+.overlay {
+    display: grid;
+    grid-column: 1/2;
+    width: 100%;
+    max-width: 1200px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+    justify-items: center;
+    mask-position: fixed;
+}
+
+.overlay p {
+    font-size: 1.50rem;
+    text-indent: justify;
+    overflow: none;
+    object-fit: contain;
+    color: white;
+    background: blue;
+    text-align: center;
+}
+
+@keyframes videowrapper {
+    {
+        max-width: 100%;
+        min-width: auto;
+    }
+    {
+        max-width: auto;
+        min-width: 100%;
+    }
+}
+
+
+/* OVERLAY END*/
+
+
+/* SELECTIO OF PEST START */
+
+
+/*SELECTION OF PEST intro Start*/
+
+.selecintro {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "selecintro1 selecinto2"
+}
+
+.selecinto {
+    grid-area: selecintro;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    padding: 1.5rem;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.selecintro1 {
+    background-color: ;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    fill-opacity: auto;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background: seashell;
+    justify-items: center;
+}
+
+.selecintro2 {
+    background-color: ;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    fill-opacity: auto;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    justify-items: center;
+    background-color: springgreen;
+}
+
+.selecintro2 h3 {
+    line-height: 1.75em;
+    font-family: sans-serif;
+}
+
+
+/*SELECTION OF PEST intro Start*/
+
+.pestselection {
+    height: 600px;
+    /* max-height: 600px; */
+    width: auto;
+    background-color: hsla(200, 40%, 30%, .4);
+    background-repeat: repeat-x;
+    background-position: 0 20%, 0 100%, 0 50%, 0 100%, 0 0;
+    animation: 50s para infinite linear;
+    background-size: cover;
+}
+
+@keyframes para {
+    100% {
+        background-position: -5000px 20%, -800px 95%, 500px 50%, 1000px 100%, 400px 0;
+    }
+}
+
+.pestselection {
+    display: grid;
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+    place-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    float: right;
+}
+
+
+/* https://pixabay.com/vectors/animal-bird-dove-fly-mourning-1296596/*/
+
+.tile {
+    width: 200px;
+    height: 200px;
+    margin-left: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 2px;
+    background-color: white;
+    display: inline-block;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+    box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.44);
+    overflow: hidden;
+    color: white;
+    font-family: 'Roboto';
+    object-fit: cover;
+}
+
+.tile img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: all 0.4s ease-out;
+    align-items: center;
+}
+
+.tile .text {
+    /*   z-index:99; */
+    position: absolute;
+    padding: 5px 15px 5px 15px;
+    height: calc(100% - 60px);
+}
+
+.text h2 {
+    font-size: 4em;
+    font-family: 'Raleway', sans-serif;
+    color: red;
+}
+
+.tile h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin: 0;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    list-style: none;
+}
+
+.tile h3 {
+    font-weight: 100;
+    margin: 20px 0 0 0;
+    font-style: italic;
+    transform: translateX(200px);
+}
+
+.tile p {
+    font-weight: 300;
+    margin: 20px 0 0 0;
+    line-height: 25px;
+    /*   opacity:0; */
+    transform: translateX(-200px);
+    transition-delay: 0.2s;
+    text-align: justify;
+}
+
+.animate-text {
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+    color: black;
+}
+
+.tile:hover {
+    /*   background-color:#99aeff; */
+    box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.64);
+    transform: scale(1.05);
+}
+
+.tile:hover img {
+    opacity: 0.2;
+}
+
+.tile:hover .animate-text {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.dots {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    color: currentColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dots span {
+    width: 5px;
+    height: 5px;
+    background-color: currentColor;
+    border-radius: 50%;
+    display: block;
+    opacity: 0;
+    transition: transform 0.4s ease-out, opacity 0.5s ease;
+    transform: translateY(30px);
+}
+
+.tile:hover span {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.dots span:nth-child(1) {
+    transition-delay: 0.05s;
+}
+
+.dots span:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+.dots span:nth-child(3) {
+    transition-delay: 0.15s;
+}
+
+@media (max-width: 1460px) {
+    .wrap {
+        flex-direction: column;
+        width: 400px;
+    }
+}
+
+
+/* SELECTIO OF PEST END */
+
+
+/*MEMBERSHIP START*/
+
+.association {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    Width: 1460px;
+    padding: 80px;
+}
+
+.association img {
+    display: grid;
+    width: 60%;
+}
+
+@keyframes para {
+    100% {
+        background-position: -5000px 20%, -800px 95%, 500px 50%, 1000px 100%, 400px 0;
+    }
+}
+
+
+/*MEMBERSHIP END */
+
+
+/*FOOTER START*/
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: blanchedalmond;
+    margin: 50px;
+}
+
+.footer ul li {
+    display: grid;
+    display: flex;
+    list-style: none;
+}
+
+
+/*END CONTENT */
+
+
+/* photo refe https://pixabay.com/photos/mouse-rodent-cute-mammal-nager-1708378/*/
+
+
+/* cockraches photo ref https://pixabay.com/vectors/bug-cockroach-insect-roach-1295181/*/
+
+
+/* bedbug photo ref https://pixabay.com/vectors/animal-bedbug-bed-bug-infestation-2027062/*/
+
+
+/* mice photo https://pixabay.com/vectors/mouse-mice-animal-rodent-small-303588/*/
